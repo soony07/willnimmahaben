@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'sabahudin.ko@gmail.com', 'name' => 'Willnimmahaben Team'),
+	'from' => array('address' => 'willnimmahaben@gmail.com', 'name' => 'Willnimmahaben Team'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return array(
 	|
 	*/
 
-	'username' => 'sabahudin.ko@gmail.com' ,
+	'username' => 'willnimmahaben@gmail.com' ,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return array(
 	|
 	*/
 
-	'password' => 'Apokalipsa01',
+	'password' => 'willnimmahaben12345',
 
 	/*
 	|--------------------------------------------------------------------------

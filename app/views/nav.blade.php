@@ -1,4 +1,4 @@
-<nav>
+<nav class="navbar navbar-inverse bg-inverse">
 	<ul class="list-inline">
 
 
