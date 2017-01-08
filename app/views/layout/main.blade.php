@@ -13,7 +13,8 @@
 	</head>
 	<body>
 		<div class="container">
-			<br />
+			{{--<br />--}}
+			<hr/>
 			@include('nav')
 
 			@yield('content')

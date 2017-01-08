@@ -1,16 +1,17 @@
 @extends('layout.main')
-
+<link href="{{ URL::asset('assets/css/header.css') }}" rel="stylesheet" />
 @section('seo')
-<title>Willkommen</title>
+    <title>Willkommen</title>
 @stop
 
 @section('content')
 
-@if(Auth::check())
-    Willkommen, {{ Auth::user()->name }}
+    @if(Auth::check())
+        <hr>
+        Willkommen, {{ Auth::user()->name }}
 
 
-<html>
+        <html>
 <span>
   <div class="text-center">
 
@@ -18,16 +19,14 @@
     <div class="center-block">
     <div class="col-md-6 portfolio-item">
         <h3>
-            <a href="#">Immobilien</a>
+            <a href="{{ URL::route('category') }}">Immobilien</a>
         </h3>
         <p> Häuser und Wohnungen</p>
 
         <a href="#">
-            <img class="img-rounded" src="/public/assets/img/haus.png" alt="" width="304" height="236">
+            <img class="img-rounded" src="{{ URL::asset('assets/img/haus.png') }}" alt="" width="304" height="236">
         </a>
         </div>
-
-
 
     <div class="col-md-6 portfolio-item">
         <h3>
@@ -35,13 +34,13 @@
         </h3>
         <p>Gebrauchtwagen und Motoräder</p>
         <a href="#">
-            <img class="img-rounded" src="/public/assets/img/auto.png" alt="" width="304" height="236">
+            <img class="img-rounded" src="{{ URL::asset('assets/img/auto.png') }}" alt="" width="304" height="236">
        </a>
         </div>
 
-<!-- /.row -->
+        <!-- /.row -->
 
-<!-- Projects Row -->
+        <!-- Projects Row -->
 
 
 
@@ -52,7 +51,7 @@
         </h3>
         <p>Von Taschenrechner bis ...</p>
         <a href="#">
-            <img class="img-rounded" src="/public/assets/img/wagen.png" alt="" width="304" height="236">
+            <img class="img-rounded" src="{{ URL::asset('assets/img/wagen.png') }}" alt="" width="304" height="236">
         </a>
 
 
@@ -69,22 +68,30 @@
             </h3>
             <p>Bücher und Zeitschriften</p>
             <a href="#">
-                <img class="img-rounded" src="/public/assets/img/buch.png" alt="" width="304" height="236">
+                <img class="img-rounded" src="{{ URL::asset('assets/img/buch.png') }}" alt="" width="304" height="236">
         </a>
 
     </div>
 </div>
-    </div>
-</div>
-</div>
+
+
 <hr>
-    </div>
     </span>
-</html>
+        </html>
 
 
-@else
-Sie sind nicht eingeloggt
-@endif
+    @else
+        <hr>
+
+        <header>
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-lead-in">Willkommen bei Willnimahaben!</div>
+                    <div class="intro-heading">Anzeigenportal</div>
+                    <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                </div>
+            </div>
+        </header>
+    @endif
 
 @stop

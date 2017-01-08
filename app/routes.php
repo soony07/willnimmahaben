@@ -89,6 +89,10 @@ Route::group(array('before' => 'guest'), function() {
 			'uses' => 'AccountController@getForgotPasswordActivate'
 		)
 	);
+
+
+
+
 });
 
 // Authenticated group
@@ -127,5 +131,24 @@ Route::group(array('before' => 'auth'), function() {
 			'uses' => 'AccountController@getChangePassword'
 		)
 	);
-	
+
+    // show item
+    Route::get('home/category',
+        array(
+            'as' => 'item',
+            'uses' => 'ItemController@showItem'
+        )
+    );
+
+    // show category
+    Route::get('home',
+        array(
+            'as' => 'category',
+            'uses' => 'CategoryController@showCategory'
+        )
+    );
+
+
 });
+
+
