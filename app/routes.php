@@ -148,6 +148,13 @@ Route::group(array('before' => 'auth'), function() {
         )
     );
 
+	// show item
+	Route::get('home/upload',
+		array(
+			'as' => 'upload',
+			'uses' => 'UploadController@showUpload'
+		)
+	);
 
 });
 
