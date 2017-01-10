@@ -41,9 +41,6 @@
         <!-- /.row -->
 
         <!-- Projects Row -->
-
-
-
 <div class="row">
     <div class="col-md-6 portfolio-item">
         <h3>
@@ -53,12 +50,7 @@
         <a href="#">
             <img class="img-rounded" src="{{ URL::asset('assets/img/wagen.png') }}" alt="" width="304" height="236">
         </a>
-
-
     </div>
-
-
-
 
 
 

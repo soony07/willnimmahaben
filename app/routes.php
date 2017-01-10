@@ -8,6 +8,7 @@ Route::get('/',
 	)
 );
 
+
 // Unauthenticated group
 
 Route::group(array('before' => 'guest'), function() {
@@ -24,6 +25,13 @@ Route::group(array('before' => 'guest'), function() {
 				'uses' => 'AccountController@postSignIn'
 			)
 		);
+
+        Route::post('home/category/addnew',
+            array(
+                'as'=>'insert_anzeigen',
+                'uses' => 'DataConroller@insert_anzeigen'
+            )
+        );
 
 		// Sign Up post
 
@@ -42,6 +50,9 @@ Route::group(array('before' => 'guest'), function() {
 				'uses' => 'AccountController@postForgotPassword'
 			)
 		);
+
+
+
 
 	});
 
@@ -147,15 +158,30 @@ Route::group(array('before' => 'auth'), function() {
             'uses' => 'CategoryController@showCategory'
         )
     );
-
+/*
 	// show item
 	Route::get('home/upload',
 		array(
 			'as' => 'upload',
 			'uses' => 'UploadController@showUpload'
 		)
-	);
+	);*/
+
+
+    // show item
+    Route::get('home/category/addnew',
+        array(
+            'as' => 'upload',
+            'uses' => 'UploadController@showUpload'
+        )
+    );
+
+
+
 
 });
+
+
+
 
 

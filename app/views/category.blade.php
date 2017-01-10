@@ -38,7 +38,7 @@
                 <img class="img-responsive" src="http://placehold.it/700x400" alt="">
             </a>
             <h3>
-                <a href="#">Project One</a>
+                <a href="{{ URL::route('upload') }}">Project One</a>
             </h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
         </div>
