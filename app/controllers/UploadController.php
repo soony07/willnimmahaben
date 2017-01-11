@@ -15,4 +15,36 @@ class UploadController extends HomeController
         return View::make('create');
 
     }
+
+    public function insert_anzeigen(){
+            $titel =  Input::get('titel');
+            $description = Input::get('description');
+            $preis =  Input::get('preis');
+            $state =  Input::get('state');
+            $zip =  Input::get('zip');
+            $address =  Input::get('address');
+            $nummer =  Input::get('nummer');
+            $email= Input::get('email');
+            $name = Input::get('name');
+            $category = Input::get('category');
+
+            echo $category;
+
+
+        $user = newPost::create(array(
+            'titel' => $titel,
+            'description' => $description,
+            'preis'=> $preis,
+            'state'=>$state,
+            'zip' => $zip,
+            'address' => $address,
+            'nummer'=> $nummer,
+            'email' => $email,
+            'name'=> $name,
+            'category' => $category
+
+        ));
+
+
+    }
 }

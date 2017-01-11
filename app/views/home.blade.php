@@ -15,15 +15,16 @@
 <span>
   <div class="text-center">
 
-<div class="row">
+<div class="row" method="get">
     <div class="center-block">
     <div class="col-md-6 portfolio-item">
         <h3>
-            <a href="{{ URL::route('category') }}">Immobilien</a>
+            <a href="{{ URL::route('/posts') }}" name="immobilien">Immobilien</a>
         </h3>
+
         <p> Häuser und Wohnungen</p>
 
-        <a href="#">
+        <a href="{{ URL::route('category') }}">
             <img class="img-rounded" src="{{ URL::asset('assets/img/haus.png') }}" alt="" width="304" height="236">
         </a>
         </div>

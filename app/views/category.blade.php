@@ -18,14 +18,21 @@
 @section('content')
 @include('nav')
 
+
+
+@foreach($posts as $post)
+    <h1>{{ $post->title }}</h1>
+    <p>{{ $post->content }}</p>
+@endforeach
+{{--
+
 <!-- Page Content -->
 <div class="container">
 
     <!-- Page Header -->
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Page Heading
-                <small>Secondary Text</small>
+            <h1 class="page-header">$_GET['immobilien']
             </h1>
         </div>
     </div>
@@ -155,4 +162,4 @@
 
 </body>
 
-</html>
+</html>--}}

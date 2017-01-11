@@ -8,7 +8,11 @@
  */
 
 use Illuminate\Database\Eloquent\Model;
-class newPost extends Model
-{
+class newPost extends Model{
+
+    protected $fillable = array('titel', 'category','description', 'image', 'preis', 'state', 'zip', 'address',  'nummer', 'email', 'name');
+
+
+    protected $table = 'category';
 
 }

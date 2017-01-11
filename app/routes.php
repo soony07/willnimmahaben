@@ -26,12 +26,14 @@ Route::group(array('before' => 'guest'), function() {
 			)
 		);
 
-        Route::post('home/category/addnew',
+       Route::post('home/category/addnew/',
             array(
                 'as'=>'insert_anzeigen',
-                'uses' => 'DataConroller@insert_anzeigen'
+                'uses' => 'UploadController@insert_anzeigen'
             )
         );
+ /*
+        Route::post('store', 'UploadController@insert_anzeigen');*/
 
 		// Sign Up post
 
@@ -158,14 +160,14 @@ Route::group(array('before' => 'auth'), function() {
             'uses' => 'CategoryController@showCategory'
         )
     );
-/*
+
 	// show item
 	Route::get('home/upload',
 		array(
 			'as' => 'upload',
 			'uses' => 'UploadController@showUpload'
 		)
-	);*/
+	);
 
 
     // show item
@@ -175,6 +177,17 @@ Route::group(array('before' => 'auth'), function() {
             'uses' => 'UploadController@showUpload'
         )
     );
+
+    Route::post('home/category/addnew/',
+        array(
+            'as'=>'insert_anzeigen',
+            'uses' => 'UploadController@insert_anzeigen'
+        )
+    );
+
+
+
+
 
 
 

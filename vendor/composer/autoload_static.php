@@ -218,6 +218,7 @@ class ComposerStaticInit95d4ac99f7269bd9ad910ec2e996c662
         'ClassPreloader\\Parser\\DirVisitor' => __DIR__ . '/..' . '/classpreloader/classpreloader/src/ClassPreloader/Parser/DirVisitor.php',
         'ClassPreloader\\Parser\\FileVisitor' => __DIR__ . '/..' . '/classpreloader/classpreloader/src/ClassPreloader/Parser/FileVisitor.php',
         'ClassPreloader\\Parser\\NodeTraverser' => __DIR__ . '/..' . '/classpreloader/classpreloader/src/ClassPreloader/Parser/NodeTraverser.php',
+        'CreateCategoryTable' => __DIR__ . '/../..' . '/app/database/migrations/2017_01_11_162247_create_category_table.php',
         'CreateTableImmob' => __DIR__ . '/../..' . '/app/database/migrations/2017_01_10_113713_create_table_immob.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/app/database/migrations/2014_04_09_162830_create_users_table.php',
         'Crypt_AES' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/Crypt/AES.php',
@@ -2052,6 +2053,7 @@ class ComposerStaticInit95d4ac99f7269bd9ad910ec2e996c662
         'System_SSH_Agent' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/System/SSH/Agent.php',
         'System_SSH_Agent_Identity' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/System/SSH/Agent.php',
         'TestCase' => __DIR__ . '/../..' . '/app/tests/TestCase.php',
+        'UploadController' => __DIR__ . '/../..' . '/app/controllers/UploadController.php',
         'User' => __DIR__ . '/../..' . '/app/models/User.php',
         'Whoops\\Exception\\ErrorException' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/ErrorException.php',
         'Whoops\\Exception\\Frame' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Exception/Frame.php',
@@ -2069,6 +2071,7 @@ class ComposerStaticInit95d4ac99f7269bd9ad910ec2e996c662
         'Whoops\\Provider\\Zend\\ExceptionStrategy' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Provider/Zend/ExceptionStrategy.php',
         'Whoops\\Provider\\Zend\\RouteNotFoundStrategy' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Provider/Zend/RouteNotFoundStrategy.php',
         'Whoops\\Run' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Run.php',
+        'newPost' => __DIR__ . '/../..' . '/app/models/newPost.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
